@@ -7,6 +7,7 @@ const typeDefs = gql`
   type Query {
     hello(message: String!): String
     helloOscar(message: String!): String
+    helloJhonnier(message: String!): String
   }
 `;
 
@@ -19,6 +20,9 @@ const resolvers = {
     helloOscar: (_, { message }) => {
         return `¡Hola, ${message}! Un saludo por parte de Oscar `;
       },
+    helloJhonnier: (_, { message }) => {
+        return `¡Hola, ${message}! Un saludo por parte de Jhonnier `;
+      }
   },
 };
 
